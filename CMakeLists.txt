@@ -3,11 +3,18 @@ project(DungeonRush VERSION 0.1.0
                     DESCRIPTION "A game inspired by snake"
                     LANGUAGES C)
 
+add_definitions("-Wall -g")
+
+
 # Add SDL2 CMake modules
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sdl2)
 
 # Set output path
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# include路径
+include_directories(
+    ${PROJECT_SOURCE_DIR}/include )
 
 # Find SDL2
 find_package(SDL2 REQUIRED)

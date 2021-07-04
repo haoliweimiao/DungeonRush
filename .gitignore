@@ -8,3 +8,12 @@ dungeon_rush
 *.o
 *.gch
 build
+.history/*
+.vscode/*
+Makefile
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles
+build
+output
+bin
